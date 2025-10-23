@@ -1,0 +1,6 @@
+MIT License + Ethical Addendum
+Copyright (c) 2025 Open Entropic Systems Initiative (OESI)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, subject to the Entropic Freedom Protocol outlined in LICENSE-ETHICS.md.
+
+Use of this code for military, surveillance, or coercive applications is strictly prohibited.

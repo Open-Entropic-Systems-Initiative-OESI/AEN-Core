@@ -1,0 +1,12 @@
+{
+  "title": "AEN-Core: Abstraction as Entropic Necessity",
+  "creators": [
+    {
+      "name": "Open Entropic Systems Initiative (OESI)"
+    }
+  ],
+  "description": "Core formalism, definitions, and toy derivations.",
+  "license": "MIT + Ethical Addendum",
+  "upload_type": "software",
+  "access_right": "open"
+}

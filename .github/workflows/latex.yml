@@ -1,0 +1,44 @@
+name: build-latex
+on:
+  push:
+    paths:
+      - 'paper/**.tex'
+      - 'paper/figures/**'
+      - '.github/workflows/latex.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up TeX Live
+        uses: zauguin/install-texlive@v3
+        with:
+          packages: >-
+            scheme-small
+            latexmk
+            geometry
+            amsmath
+            amssymb
+            graphicx
+            booktabs
+            hyperref
+            setspace
+
+      - name: Build all .tex in paper/
+        run: |
+          set -e
+          cd paper
+          for f in *.tex; do
+            echo "Building $f"
+            latexmk -pdf -interaction=nonstopmode -halt-on-error "$f"
+          done
+
+      - name: Upload PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: paper-pdfs
+          path: paper/*.pdf
