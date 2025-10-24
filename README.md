@@ -1,6 +1,5 @@
 # Abstraction as Entropic Necessity (AEN) – Core Framework
 *A project of the Open Entropic Systems Initiative (OESI)*  
-Author: **David T. Swanson**  
 License: **CC BY-NC-SA 4.0**
 
 ---
